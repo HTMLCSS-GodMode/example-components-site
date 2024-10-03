@@ -1,0 +1,81 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #087f5b 
+GREY: #343a40
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 10px solid #087f5b;
+}
+
+.container {
+  height: 100vh;
+}
+
+.main {
+  width: 1200px;
+  margin: 100px auto;
+  padding: 32px;
+}
+
+.main .main-header {
+  font-size: 74px;
+  font-weight: 700;
+  color: #087f5b;
+  margin-bottom: 24px;
+}
+
+.main-text {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.components {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background-color: yellowgreen; */
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  color: #343a40;
+  box-shadow: 0 20px 30px 0 rgba(73, 80, 87, 0.07);
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cee5de;
+  color: #087f5b;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
